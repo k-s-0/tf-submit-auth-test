@@ -1,0 +1,11 @@
+job_queue: mynx
+provision_data:
+  distro: noble
+job_priority: 10
+test_data:
+  test_cmds: |
+    ssh ubuntu@$DEVICE_IP uname -r
+reserve_data:
+  ssh_keys:
+    - "lp:ks0"
+  timeout: 259200
