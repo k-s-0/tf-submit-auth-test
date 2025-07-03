@@ -12,7 +12,7 @@ jobs:
 
       - name: Submit job
         id: tf-submit
-        uses: canonical/testflinger/.github/actions/submit@main
+        uses: k-s-0/testflinger/.github/actions/submit@main
         with:
           job-path: ".github/test_job.yaml"
           poll: true
